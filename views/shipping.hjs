@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/stylesheets/Shipping.css"> 
+</head>
+<body>
+
+	<div class="Buy" >
+
+		<div class="BuyImage">
+			<img src='{{photo}}'></br>
+		</div>
+		<div class = "BuyDetails">
+			<h3>Product:{{name}}</h3><br>
+			<p>Price:{{price}}&#8377;</p><br>
+			<label><b>Shipping Address:</b></label><br><br>
+			<textarea name="Address" id="address" cols="47" rows="10"></textarea><br><br>
+			<input type="submit" value="submit">
+		</div>
+	</div>
+</body>
+</html>

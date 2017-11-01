@@ -1,0 +1,221 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/style1.css" >
+<link rel="stylesheet" href="check.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<title>Men's Watches</title>
+
+</head>
+<body>
+
+<div id="topimg" >
+
+<ul id="topmenu">
+    <li><a > About us</a> </li>
+    <li><a id="myBtn" href="/login"> Login Us | </a></li>
+    <li><a href="/sign_up" target="_blank"> Sign Up | </a></li>
+    <li><a href="#"> Customer Care |</a></li>
+    <li><a href="#"> Gift Card |</a></li>
+	<li><a href="#"> Advertise |</a></li>
+	
+</ul>
+
+<a href="index.html"><div id="logo" > <img src="../logo/logo.png"></a>
+</div>
+	
+
+
+<form method="POST" id="search" >
+
+<input type="text" id="searchtext" placeholder="Search....." >
+<span id="submitbtn"><input type="submit" id="searchbutton" value="go">
+</span>
+</form>
+
+</div>
+
+
+<div class="Slide">
+<img src="../sliding images/img1.jpg" id="img" alt="" />
+</div>
+<div class="container">
+<div class="container1">
+	<img src="../Watches-men/a.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="buy.html"><button class="Buy" >Buy Now</button></a>
+	
+	
+<a  class="add-to-cart"  data-name="Apple" data-price="1.22"><button class="cart" >Add To Cart</button></a>
+	
+	</div>
+<div class="container2">
+	<img src="../Watches-men/b.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	
+<div class="container3">
+	<img src="../Watches-men/c.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container4">
+        <img src="../Watches-men/d.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container5">
+	<img src="../Watches-men/e.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container6">
+	<img src="../Watches-men/f.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container7">
+	<img src="../Watches-men/g.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container8">
+	<img src="../Watches-men/h.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container9">
+	<img src="../Watches-men/i.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<button class="Buy" >Buy Now</button>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	</div>
+	
+	
+<script type="text/javascript" src="../js/ShoppingCart.js"></script>
+<script type="text/javascript" >
+	
+	$(".add-to-cart").click(function(event){
+		event.preventDefault();
+		var name=$(this).attr("data-name");
+		var price=Number($(this).attr("data-price"));
+		shoppingCart.addItemToCart(name,price,1);
+		window.location.href='test.html';
+		displayCart();
+	});
+
+	
+	$("#clear-cart").click(function(event){
+		shoppingCart.clearCart();
+		displayCart();
+	});
+	
+	function displayCart(){
+		var cartArray=shoppingCart.listCart();
+		var output="";
+		for(var i in  cartArray){
+			output+="<li>"
+			+cartArray[i].name
+			+"<input class='item-count' type='number'  data-name='"
+			+cartArray[i].name
+			+"' value='"+cartArray[i].count+"'>"														//	+cartArray[i].count
+			+"&#10007;"+cartArray[i].price
+			+"="+cartArray[i].total
+			+"<button class='plus-item' data-name='"
+			+cartArray[i].name+"'>+</button>"
+			+"<button class='sub-item' data-name='"
+			+cartArray[i].name+"'>-</button>"
+			+"<button class='delete-item' data-name='"+cartArray[i].name+"'>&#10007;</button>"
+			+"</li>";
+		
+		}
+		$("#show-cart").html(output);
+		$("#count-cart").html(shoppingCart.countCart());
+		$("#total-cart").html(shoppingCart.totalCart());
+	}
+
+   $("#show-cart").on("click",".delete-item",function(event){
+		var name=$(this).attr("data-name");
+		shoppingCart.removeItemFromCartAll(name);
+		displayCart();
+   });
+
+   $("#show-cart").on("click",".sub-item",function(event){
+		var name=$(this).attr("data-name");
+		shoppingCart.removeItemFromCart(name);
+		displayCart();
+   });
+   
+   $("#show-cart").on("click",".plus-item",function(event){
+		var name=$(this).attr("data-name");
+		shoppingCart.addItemToCart(name,0,1);
+		displayCart();
+   });
+   
+    $("#show-cart").on("change",".item-count",function(event){
+		var name=$(this).attr("data-name");
+		var count=Number($(this).val());
+		
+		shoppingCart.setCountForItem(name,count);
+		displayCart();
+		
+   });
+  
+displayCart();
+ 
+</script>
+	
+	
+</body>
+
+</html>

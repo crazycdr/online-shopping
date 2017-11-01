@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="/stylesheets/login.css">
+	<title>Login page</title>
+</head>
+<body>
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/users/login" method="POST">
+    
+	 <div class="imgcontainer">
+     
+
+	
+    <div class="container">
+      <label><font color="#800080" ><b>Email</b></font></label>
+      <input id="text" type="text" placeholder="Enter Username" name="email" required>
+
+      <label><font color="#800080" ><b>Password</b></font></label>
+      <input id="password" type="password" placeholder="Enter Password" name="password" required>
+        
+      <button class="button" type="submit">Login</button>
+      
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/style1.css" />
+<link rel="stylesheet" href="/stylesheets/Formal.css" />
+<title>Men's Footware</title>
+
+</head>
+<body>
+
+<div id="topimg" >
+
+<ul id="topmenu">
+    <li><a > About us</a> </li>
+    <li><a id="myBtn" href="/login"> Login Us | </a></li>
+    <li><a href="/sign_up" target="_blank"> Sign Up | </a></li>
+    <li><a href="#"> Customer Care |</a></li>
+    <li><a href="#"> Gift Card |</a></li>
+	<li><a href="#"> Advertise |</a></li>
+	
+</ul>
+
+<a href="index"><div id="logo" > <img src="/images/logo/logo.png"></a>
+</div>
+	
+
+
+<form method="POST" id="search" >
+
+<input type="text" id="searchtext" placeholder="Search" >
+<span id="submitbtn"><input type="submit" id="searchbutton" value="go">
+</span>
+</form>
+
+</div>
+
+
+<div class="FormalSlide">
+<img src="/images/sliding images/m.jpg" id="img" alt="" />
+</div>
+<div class="container">
+<div class="container1">
+	<img src="/images/Women Footwear/a.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968e8fbb5a069facf7d733b"><button class="Buy" >Buy Now</button></a>
+	
+	
+<a href="#">	<button class="cart" >Add To Cart</button></a>
+	
+	</div>
+<div class="container2">
+	<img src="/images/Women Footwear/b.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968eabdb5a069facf7d733c"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	
+<div class="container3">
+	<img src="/images/Women Footwear/c.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968eb2eb5a069facf7d733d"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container4">
+	<img src="/images/Women Footwear/d.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968eb92b5a069facf7d733e"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container5">
+	<img src="/images/Women Footwear/e.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968ec3db5a069facf7d733f"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container6">
+	<img src="/images/Women Footwear/f.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968ecc8b5a069facf7d7340"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container7">
+	<img src="/images/Women Footwear/g.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968ed1eb5a069facf7d7341"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container8">
+	<img src="/images/Women Footwear/h.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968ed6ab5a069facf7d7342"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container9">
+	<img src="/images/Women Footwear/i.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/baby?item=5968edb0b5a069facf7d7343"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	</div>
+	
+	<div id="bottom_cell">
+
+<table>
+  <tr>
+    <th>Help</th>
+    <th>Connect With Us</th>
+    <th>Get to Know Us</th>
+  </tr>
+ 
+  <tr>
+    <td>Cancellation & Returns</td>
+    <td>Sell on GRG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Shipping</td>
+    <td>About Us</td>
+    <td>UK</td>
+  </tr>
+ 
+  <tr>
+    <td>payement</td>
+    <td>Contact Us</td>
+    <td></td>
+  </tr>
+</table>
+
+</div>
+</body>
+
+</html>

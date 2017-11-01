@@ -1,0 +1,50 @@
+.FormalSlide{
+	position:absolute;
+	height:100%;
+	width:100%;
+	margin:0px auto;
+	top:125px;
+	left:0px;
+	right:0px;
+	
+}
+#img{
+	height:650px;
+	width:1350px;
+}
+#parallax
+{
+	
+	position:absolute;
+	width:100%;
+	height:60%;
+	margin-left:0px ;
+
+	background: url("../sliding images/c1.jpg") repeat fixed 100%;
+	top:1150px;
+	overflow:hidden;
+}
+#middle{
+	position:relative;
+	top:60px;
+}
+#bottom_cell{
+	position:absolute;
+	top:2000px;
+	background-color:#232f3e;
+	width:100%;
+	height:50%;
+}
+#bottom_cell>table{
+	position:absolute;
+	top:60px;
+	left:400px;
+	text-align:center;
+}
+#bottom_cell>table,th,td{
+	 
+    border-collapse: collapse;
+	color:white;
+	text-align:center;
+	padding:10px;
+}

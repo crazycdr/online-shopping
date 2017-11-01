@@ -1,0 +1,83 @@
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/buy.css" />
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- Include jQuery. -->
+        <script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+        <!-- Include Cloud Zoom CSS. -->
+        <link rel="stylesheet" type="text/css" href="/javascripts/cloudzoom.css" />
+
+        <!-- Include Cloud Zoom script. -->
+        <script type="text/javascript" src="/javascripts/cloudzoom.js"></script>
+
+        <!-- Call quick start function. -->
+        <script type="text/javascript">
+            CloudZoom.quickStart();
+        </script>    
+		<script type="text/javascript" src="/javascripts/buy.js">
+		
+		</script>
+		<script type="text/javascript" src="/javascripts/validation.js">
+		
+		</script>
+</head>
+<body>
+<div class="cloud_image">
+
+<img class = "cloudzoom" src = "images/images/small/Baby/d.jpeg"
+             data-cloudzoom = "zoomImage: 'images/images/large/Baby/d.jpeg'" />
+</div>
+<a href="/shipping?item=58e4953175f4fb1e9600ec2d"><button class="buy">Buy Now</button></a>
+<button class="cart">Add To cart</button>
+<div class="description">
+<h2><b>Puma Rebound Mid Lite DP Men High Ankle Sneakers  (Navy, Yellow) </b></h2> 
+<b><h3>&#8377;560</h3></b><br/><br/>
+<h4><str>Special Price </str> Deal of the Day: Extra 5% Off<br><br>
+<str>Bank Offer</str> Extra 5% off on Axis Bank Buzz Credit Cards<br></h4>
+<h4 >Delivery</h4>
+<form method="post" action="#" onSubmit="return pincodes()">
+ <input id="pincode" placeholder="6 digit code" onkeyup="lettersOnly(this)" type="text" /> 
+<button>check</button><br>
+</form>
+<br>
+<br/><br/>
+<div class="feature">
+<b>Features</b><ul>
+	<li>:Colour: Navy, Yellow<br/>
+	<li>:Binding Paperback<br/>
+	</ul>
+<b>Seller </b><ul>
+		<li>: TrueComRetail<br/><br/>
+</ul>	
+</div>
+<div class="service">
+<b>Services</b> <ul>
+		<li>:Cash On Delivery Available<br/>
+		<li>:10 Days replacement Policy<br/></br>
+		
+</div>
+<div class="Specification">
+<h2 ><b><font color="">Specifications</font></b><h2>
+<h3>  General <h3>
+<h4> Model Name  &emsp;   Rebound Mid Lite DP Men <h4>
+<h4> Ideal For   &emsp; &emsp;  &nbsp;  Men <h4>
+<h4> Ocassion   &emsp; &emsp; &nbsp; Casual<h4>
+
+<h3> Product Details <h3>
+<h4> Weight  &emsp; &emsp; 502 g (per single Shoe) - Weight of the product may vary depending on size. <h4>
+<h4> Style   &emsp; &emsp; &nbsp; &nbsp;     Mesh Panel Detail, Panel and Stitch Detail<h4>
+<h4> Tip Shape   &emsp;     Round<h4>
+<h4> Season   &emsp;    &nbsp; &nbsp;&nbsp; AW15<h4>
+<h4> Closure   &emsp;&nbsp;&nbsp;&nbsp;&nbsp;   Laced<h4>
+<h3> Review <h3>
+<h4>OMG
+A good product.. very comfortable while riding, a cushion feel to your heels.. awesome product.. worth buying it!! Thanks Flipkart..
+</h4>     
+
+
+</div>
+
+s
+</html>

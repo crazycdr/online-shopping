@@ -1,0 +1,366 @@
+#topimg{
+position:absolute;
+top:0px;
+left:0px;
+right:0px;
+width:100%;
+height:125px;
+transition:0.5s linear;
+background:#EFEFE7;
+position:fixed;
+z-index:+3;
+}
+#topmenu{
+	
+		list-style-type: none;
+		margin: 0px;
+    padding-right:20px;
+	padding-top:10px;
+	
+}
+
+#topmenu li{
+	
+	
+	float:right;
+}
+#topmenu li a{
+	color:#800080;
+}
+#logo{position:absolute;
+      left:40px;
+	  top:-2px;}
+	  
+#logo img{height:150px;
+          width:200px;}	  
+#search{
+	
+position:absolute;
+left:400px;
+top:60px;
+
+}
+#searchtext
+{
+	width:600px;
+height:30px;
+border-radius:10px;
+/*box-shadow:10px 8px 7px grey;*/
+}
+
+#searchbutton{
+	border-radius:20px;
+	height:40px;
+	width:40px;
+	background-color:#800080;
+	color:#ffffff;
+	margin: 0px 0px 0px 10px; 
+}
+.Slide{
+	position:absolute;
+	height:100%;
+	width:100%;
+	margin:0px auto;
+	top:120px;
+	left:0px;
+	right:0px;
+	
+}
+#img{
+	height:72%;
+	width:100%;
+}
+.container{
+	position:relative;
+	left:100px;
+	top:800px;
+	width:950px;
+}
+.container1{
+	
+position:absolute;
+top:20px;
+left:200px;
+right:20px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container1>img{
+	width:300px;
+	height:300px;
+	
+}
+.container2{
+position:absolute;
+top:20px;
+left:540px;
+right:20px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container2>img{
+	width:300px;
+	height:300px;
+	
+}
+.container3{
+position:absolute;
+top:20px;
+left:880px;
+right:20px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container3>img{
+	width:300px;
+	height:300px;
+	
+}
+.container4{
+position:absolute;
+top:400px;
+left:200px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container4>img{
+	width:300px;
+	height:300px;
+	
+}
+.container5{
+position:absolute;
+top:400px;
+left:540px;
+
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container5>img{
+	width:300px;
+	height:300px;
+	
+}
+.container6{
+position:absolute;
+top:400px;
+left:880px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container6>img{
+	width:300px;
+	height:300px;
+	
+}
+.container7{
+position:absolute;
+top:800px;
+left:200px;
+
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container7>img{
+	width:300px;
+	height:300px;
+	
+}
+.container8{
+position:absolute;
+top:800px;
+left:540px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container8>img{
+	width:300px;
+	height:300px;
+	
+}
+.container9{
+position:absolute;
+top:800px;
+left:880px;
+width:300px;
+height:300px;
+overflow:hidden;
+}
+.container9>img{
+	width:300px;
+	height:300px;
+	
+}
+
+.wrapper{
+	position:absolute;
+	top:0;
+	left:-100%;
+	right:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.7);
+	width:300px;
+	height:300px;
+	
+	transition:0.7s;
+}
+.Buy{
+	position:absolute;
+	width: 200px;
+	height:50px;
+	left:60px;
+	right:0;
+	bottom:-100px;
+	transition:1s;
+	background-color:green;
+	border:none;
+	color:white;
+	padding: 15px 32px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+.Buy:hover{
+	position:absolute;
+	width: 200px;
+	height:50px;
+	left:60px;
+	right:0;
+	bottom:-100px;
+	transition:1s;
+	background-color:#F52887;
+	border:none;
+	color:white;
+	padding: 15px 32px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+.cart{
+	position:absolute;
+	width: 200px;
+	height:50px;
+	left:60px;
+	top:-100px;
+	transition:0.5s;
+	background-color:red;
+	border:none;
+	color:white;
+	padding: 15px 32px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+.cart:hover{
+	position:absolute;
+	width: 200px;
+	height:50px;
+	left:60px;
+	top:-100px;
+	transition:0.5s;
+	background-color:blue;
+	border:none;
+	color:white;
+	padding: 15px 32px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+.container1:hover .wrapper{
+	left:0;
+}
+.container1:hover .Buy{
+	bottom:60px;
+}
+.container1:hover .cart{
+	top:60px;
+}
+.container2:hover .wrapper{
+	left:0;
+}
+.container2:hover .Buy{
+	bottom:60px;
+}
+.container2:hover .cart{
+	top:60px;
+}
+.container3:hover .wrapper{
+	left:0;
+}
+.container3:hover .Buy{
+	bottom:60px;
+}
+.container3:hover .cart{
+	top:60px;
+}
+.container4:hover .wrapper{
+	left:0;
+}
+.container4:hover .Buy{
+	bottom:60px;
+}
+.container4:hover .cart{
+	top:60px;
+}
+.container5:hover .wrapper{
+	left:0;
+}
+.container5:hover .Buy{
+	bottom:60px;
+}
+.container5:hover .cart{
+	top:60px;
+}
+.container6:hover .wrapper{
+	left:0;
+}
+.container6:hover .Buy{
+	bottom:60px;
+}
+.container6:hover .cart{
+	top:60px;
+}
+.container7:hover .wrapper{
+	left:0;
+}
+.container7:hover .Buy{
+	bottom:60px;
+}
+.container7:hover .cart{
+	top:60px;
+}
+.container8:hover .wrapper{
+	left:0;
+}
+.container8:hover .Buy{
+	bottom:60px;
+}
+.container8:hover .cart{
+	top:60px;
+}
+.container9:hover .wrapper{
+	left:0;
+}
+.container9:hover .Buy{
+	bottom:60px;
+}
+.container9:hover .cart{
+	top:60px;
+}
+

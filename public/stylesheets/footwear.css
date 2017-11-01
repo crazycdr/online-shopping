@@ -1,0 +1,90 @@
+#sandal{
+	position:absolute;
+	width:100px;
+	height:60px;
+	top:130px;
+	left:150px;
+	background-color:transparent;
+	border:solid 2px white ;
+	color:white;
+	padding: 5px 2px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+	
+}
+#sandal:hover{
+	transition:0.8s;
+	background-color:blue;
+	border:none;
+	color:white;
+	left:150px;
+	padding: 5px 2px;
+	text-align:center;
+	border:solid 2px white ;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+#shoes{
+	position:absolute;
+	width:100px;
+	height:60px;
+	top:130px;
+	left:150px;
+	background-color:transparent;
+	border:solid 2px white ;
+	color:white;
+	padding: 5px 2px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+	
+}
+#shoes:hover{
+	transition:0.8s;
+	background-color:blue;
+	border:none;
+	color:white;
+	left:150px;
+	padding: 5px 2px;
+	text-align:center;
+	border:solid 2px white ;
+	font-size:16px;
+	margin:4px 2px;
+	cursor:pointer;
+}
+#girls_shoes
+{
+	position:absolute;
+	width:100px;
+	height:200px;
+	border-radius:10px;
+	top:1200px;
+	left:230px;
+	z-index:+2;
+}
+#girls_shoes>img{
+	width:400px;
+	height:300px;
+}
+#girls_sandal
+{
+	position:absolute;
+	
+	width:100px;
+	height:200px;
+	border-radius:10px;
+	top:1200px;
+	right:450px;
+	z-index:+2;
+}
+
+#girls_sandal>img{
+	width:400px;
+	height:300px;
+}

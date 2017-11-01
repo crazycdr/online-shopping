@@ -1,0 +1,23 @@
+section{
+background-color:lightblue;
+width:100%;
+}
+div #articles{
+	background-color:lightgray;
+	min-height:400px;
+	width:66%;
+	padding:10px;
+	box-sizing:border-box;
+	display:table-cell;
+}
+article{
+	height:100px;
+	width:100px;
+	background-color:white;
+	float:left;
+	margin:20px;
+	
+}
+div#sidebar{
+	
+}

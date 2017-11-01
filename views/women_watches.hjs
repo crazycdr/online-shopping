@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/style1.css" />
+<link rel="stylesheet" href="/stylesheets/Formal.css" />
+<title>Women's Watches</title>
+
+</head>
+<body>
+
+<div id="topimg" >
+
+<ul id="topmenu">
+    <li><a > About us</a> </li>
+    <li><a id="myBtn" href="/login"> Login Us | </a></li>
+    <li><a href="/sign_up" target="_blank"> Sign Up | </a></li>
+    <li><a href="#"> Customer Care |</a></li>
+    <li><a href="#"> Gift Card |</a></li>
+	<li><a href="#"> Advertise |</a></li>
+	
+</ul>
+
+<a href="/index"><div id="logo" > <img src="/images/logo/logo.png"></a>
+</div>
+	
+
+
+<form method="POST" id="search" >
+
+<input type="text" id="searchtext" placeholder="Search" >
+<span id="submitbtn"><input type="submit" id="searchbutton" value="go">
+</span>
+</form>
+
+</div>
+
+
+<div class="FormalSlide">
+<img src="/images/sliding images/a11.jpg" id="img" alt="" />
+</div>
+<div class="container">
+<div class="container1">
+	<img src="/images/Women watches/a.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+		<a href="/WomenWatches1"><button class="Buy" >Buy Now</button></a>
+	
+	
+<a href="#">	<button class="cart" >Add To Cart</button></a>
+	
+	</div>
+<div class="container2">
+	<img src="/images/Women watches/b.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches2"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	
+<div class="container3">
+	<img src="/images/Women watches/c.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches3"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container4">
+	<img src="/images/Women watches/d.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches4"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container5">
+	<img src="/images/Women watches/e.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches5"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container6">
+	<img src="/images/Women watches/f.jpeg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches6"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container7">
+	<img src="/images/Women watches/g.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches7"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container8">
+	<img src="/images/Women watches/h.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches8"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	<div class="container9">
+	<img src="/images/Women watches/i.jpg" alt="" />
+	<div class="wrapper">
+		
+	</div>
+			<a href="/WomenWatches9"><button class="Buy" >Buy Now</button></a>
+	
+	
+	<button class="cart" >Add To Cart</button>
+	
+	</div>
+	</div>
+</body>
+
+</html>

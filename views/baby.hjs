@@ -1,0 +1,142 @@
+	<script type="text/javascript">
+	(()=>{
+		// var a = {{item}};
+		// console.log("item",a);
+	})();
+</script>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Baby Page now</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/stylesheets/buy.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Include Cloud Zoom CSS. -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/cloudzoom.css" />
+	<!-- Include jQuery. -->
+	<script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+	<!-- Include Cloud Zoom script. -->
+	<script type="text/javascript" src="/javascripts/cloudzoom.js"></script>
+
+	<!-- Call quick start function. -->
+	<script type="text/javascript">
+		CloudZoom.quickStart();
+	</script>
+	<script type="text/javascript" src="/javascripts/buy.js"></script>
+	<script type="text/javascript" src="/javascripts/validation.js"></script>
+</head>
+<body data-id="{{item._id}}">
+	<div class="cloud_image">
+		<img class = "cloudzoom" src = "{{item.photoSmall}}" data-cloudzoom = "zoomImage: '{{item.photoZoom}}'" />
+	</div>
+	<a href="/shipping?item=58e4941975f4fb1e9600ec2a"><button class="buy">Buy Now</button></a>
+	<button class="cart">Add To cart</button>
+	<div class="description">
+		<h2><b>{{item.name}}</b></h2> 
+		<h3><b>&#8377;{{item.price}}</b></h3>
+		<br/><br/>
+		<h4>
+			{{#item.offers}}
+				<span>{{.}}</span></br>
+			{{/item.offers}}
+		</h4>
+		<h4 >Delivery</h4>
+		<form method="post" action="#" onSubmit="return pincodes()">
+			<input id="pincode" placeholder="6 digit code" onkeyup="lettersOnly(this)" type="text" /> 
+			<button>check</button><br>
+		</form>
+		<br/><br/><br/>
+		<div class="feature">
+			<b>Features</b>
+			<ul>
+				{{#item.features}}
+					<li>{{.}}</li></br>
+				{{/item.features}}
+			</ul>
+			<b>Seller </b>
+			<ul>
+				<li>{{item.seller}}<br/><br/></li>
+			</ul>	
+		</div>
+		<div class="service">
+			<b>Services</b>
+			<ul>
+				{{#item.services}}
+					<li>{{.}}</li></br>
+				{{/item.services}}
+			</ul>
+		</div>
+		<div>
+
+	</div>
+	
+	</div>
+	<div class="review">
+		<h2>Review</h2>
+		<span id="rating">
+			<i class="fa fa-star-o"  aria-hidden="true" data-value="1"></i>
+			<i class="fa fa-star-o"  aria-hidden="true" data-value="2"></i>
+			<i class="fa fa-star-o"  aria-hidden="true" data-value="3"></i>
+			<i class="fa fa-star-o"  aria-hidden="true" data-value="4"></i>
+			<i class="fa fa-star-o"  aria-hidden="true" data-value="5"></i>
+		</span>
+		<form action="/" method="post" onsubmit="return reviewItem(event)">
+			<input type="number" style="display: none;" id="ratingValue" value="0" />
+			<textarea name="" id="" cols="30" rows="10"></textarea><br/><br/>	
+			<input type="submit" value="Send review">	
+		</form>
+		
+		<ul>
+			{{#item.reviews}}
+				<li>
+					BY <h3>{{userName}}</h3>	<br/>
+					<i class="fa fa-star"  aria-hidden="true"></i>
+					<i class="fa fa-star"  aria-hidden="true"></i>
+					<i class="fa fa-star"  aria-hidden="true"></i>
+					<i class="fa fa-star"  aria-hidden="true"></i>
+					<i class="fa fa-star"  aria-hidden="true"></i><br/>
+					<span>{{description}}</span>
+				</li>
+			{{/item.reviews}}
+				
+			
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var itemId = '{{item._id}}';
+		(()=>{
+			var stars = document.querySelector('#rating').children;
+			for(var i=0;i<stars.length;i++){
+				stars.item(i).addEventListener('mouseover', (e)=>{
+					var val = e.target.getAttribute('data-value');
+					document.querySelector('#ratingValue').value = val;
+					for(var j=0;j<stars.length;j++){
+						stars.item(j).className = "fa fa-star-o";
+					}
+					for(var j=0;j<val;j++){
+						stars.item(j).className = "fa fa-star";
+					}
+				});
+			}
+			
+		})();
+		function reviewItem(e){
+				var rating = e.target.querySelector('#ratingValue').value,
+					desc = e.target.querySelector('textarea').value;
+				$.post('/users/review', {
+					rating: rating,
+					desc: desc,
+					itemID: itemId
+				}).done(function(resp){
+					if(resp.success){
+						// 
+					}
+				});
+				return false;
+			}
+	</script>
+</body>
+</html>	

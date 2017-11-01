@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/signup.css"/>
+</head>
+<body>
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/users/register" method="post">
+    <div class="container">
+	  <label><b>	 Name: </b></label>
+	    <input  name="u_name" type="text" required><br></br>
+        <label><b>Email: </b>
+        </label> <input name="email" type="email" required><br></br>
+      <label><b>Password: </b></label>
+       <input name="password" type="password" required=""><br></br>
+      <label><b>Repassword: </b></label> <input name="re-password" type="password" required>
+      <label><b>Phone No: </b></label> <input name="phone" type="number" required><br></br>
+      <label><b>Address: </b></label> <input name="baseAddress" type="text" required><br></br>
+
+		<label for="district">district</label>
+    <select class="country" name="district">
+      <option selected="selected" value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select><br></br>
+    <label for="country">State</label>
+    <select class="country" name="state">
+      <option selected="selected" value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select><br></br>
+
+    <label for="country">Country</label>
+    <select class="country" name="country" required>
+      <option selected="selected" value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select><br></br>
+  pincode: <input name="pincode" type="number">
+   
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</html>

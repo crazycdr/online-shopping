@@ -1,0 +1,39 @@
+.Buy{
+	position: fixed;
+	top:80px;
+	height:1000px;
+}
+.BuyImage
+{
+	position: relative;
+	display: inline-block;
+	left:100px;
+	width:400px;
+	height: 500px;
+	margin:  0px;
+	float: left;
+	
+}
+.BuyImage>img{
+	
+	width:400px;
+	height:500px; 
+}
+.BuyDetails{
+position: relative;
+border-style: solid;
+border-width: 1px;
+	padding: 20px;
+	display: inline-block;
+	left: 300px;
+	width: 600px;
+	height: 500px;
+	right: 0px;
+}
+#text{
+	width:80%;
+	height: 30%;
+}
+#address{
+	font-size:20px;
+}
